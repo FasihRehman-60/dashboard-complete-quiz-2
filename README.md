@@ -29,6 +29,8 @@ This project demonstrates:
 ![Services-Page](./images/Services-page.png)
 ### Contact-Page
 ![Contact-Page](./images/Contact-Page.png)
+### GET_API
+![API-Page](./images/Get-Api-page.png)
 
 
 ---
@@ -145,6 +147,7 @@ frontend/src/utils	             Utility functions and API setup (like api.js)
 | **Related News Section**        | Suggests similar articles based on the one being viewed.                                                            |
 | **Bookmarks / Save for Later**  | Users can save favorite articles to read later.                                                                     |
 | **Like / Upvote System**        | Engage with content by liking or upvoting articles.                                                                 |
+| **API KEY AVAILABLE**           | Fetch the latest news using our Public API. Get articles by category, company, source, date, or search query.       |
 
 ## Future Improvements
 ✔️ Completed
@@ -153,6 +156,7 @@ frontend/src/utils	             Utility functions and API setup (like api.js)
 - Contact form fully working with backend
 - UI Improvements across all pages
 - Full responsive redesign with Tailwind CSS
+- API Generation
 
 ### 🧑‍💻 Author
 

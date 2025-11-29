@@ -14,7 +14,8 @@ import AuthPage from "./pages/AuthPage.jsx";
 import { startSessionWatcher } from "./utils/sessionWatcher.js";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
-
+import DeveloperAPI from "./pages/DeveloperAPI.jsx";
+import ApiDocs from "./pages/ApiDocs.jsx"
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem("token");
   return token ? children : <Navigate to="/auth" replace />;
@@ -53,6 +54,8 @@ function LayoutWrapper({ setProgress, apiKey, pageSize }) {
           <Route path="/forgot-password" element={<ForgotPassword/>} />
           <Route path="/reset-password/:token" element={<ResetPassword/>} />
           <Route path="/signup" element={<AuthPage />} />
+          <Route path="/developer-api" element={<DeveloperAPI />} />
+          <Route path="/api-docs" element={<ApiDocs />} />
         </Routes>
       </main>
       {!hideLayout && <Footer />}

@@ -24,14 +24,14 @@ function Footer() {
               {[
                 { to: "/", label: "Home" },
                 { to: "/services", label: "Services" },
+                { to: "/about", label: "About" },
+                { to: "/contact", label: "Contact" },
                 { to: "/business", label: "Business" },
                 { to: "/entertainment", label: "Entertainment" },
                 { to: "/health", label: "Health" },
                 { to: "/science", label: "Science" },
                 { to: "/sports", label: "Sports" },
                 { to: "/technology", label: "Technology" },
-                { to: "/about", label: "About" },
-                { to: "/contact", label: "Contact" },
               ].map(({ to, label }) => (
                 <NavLink  key={label} to={to}
                   className={({ isActive }) =>

@@ -87,6 +87,11 @@ const services = [
     title: "Like / Upvote System",
     description:
       "Like or upvote articles you enjoy. See what’s popular and engage with content that matters to you.",
+  },{
+  icon: <Layers className="w-8 h-8 text-amber-500" />,
+  title: "Public API Access",
+  description:
+    "Fetch the latest news using our Public API. Get articles by category, company, source, date, or search query. Works with or without an API key for preview mode.",
   },
 ];
 

@@ -4,6 +4,7 @@ import api from "../utils/api";
 import NewsItem from "../components/NewsItem";
 import { Newspaper, Layers, Calendar, CheckCircle, LogOut, Trash2, Check, ChevronLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Code, FileText } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 8 },
@@ -18,6 +19,7 @@ const itemVariants = {
 
 const Dashboard = () => {
   const [tab, setTab] = useState("liked");
+  const [activeTab, setActiveTab] = useState("");
   const [data, setData] = useState({
     user: {},
     liked: [],
@@ -305,6 +307,31 @@ return (
           <p className="text-sm text-gray-600">{data.user?.email}</p>
           {data.user?.createdAt && <p className="text-xs text-gray-400 mt-1">Joined on {new Date(data.user.createdAt).toLocaleDateString()}</p>}
         </div>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            setActiveTab("developer-api");
+            navigate("/developer-api");
+          }}
+          className="flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition"
+        >
+          <Code size={18} /> GET API
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            setActiveTab("/api-docs");
+            navigate("/api-docs");
+          }}
+          className="flex items-center gap-2 bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition"
+        >
+          <FileText size={18} /> API DOCS
+        </motion.button>
+
         <motion.button whileHover={{ scale: 1.05, rotate: 1 }} whileTap={{ scale: 0.95 }}
           onClick={() => { localStorage.removeItem("token"); localStorage.removeItem("user"); navigate("/auth"); }}
           className="flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition">

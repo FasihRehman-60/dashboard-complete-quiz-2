@@ -32,8 +32,9 @@ function NavBar() {
     { to: "/science", label: "Science" },
     { to: "/sports", label: "Sports" },
     { to: "/technology", label: "Technology" },
-    { to: "/about", label: "About" },
+    { to: "/services", label: "Services"},
     { to: "/contact", label: "Contact" },
+
   ];
 
   return (
