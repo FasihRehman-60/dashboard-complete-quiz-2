@@ -20,7 +20,7 @@ This project demonstrates:
 ### 🧠 Backend Folder Structure
 ![Backend Folder Structure](./images/backend-structure.png)
 ### DashBoard-Page
-![DashBoard Picture](./images/dashboard.png)
+![DashBoard Picture](./images/dashboard-page.png)
 ### Home-Page
 ![HomePage Picture](./images/HomePage.png)
 ### About-Page
@@ -39,7 +39,7 @@ git clone https://github.com/FasihRehman-60/dashboard-complete-quiz-2
 
 cd newswave
 
-### Backend Setup
+## Backend Setup
 Navigate to the backend folder:
 
 cd backend
@@ -47,26 +47,27 @@ cd backend
 ### Install dependencies:
 npm install
 
-**Rename .env.txt to .env**
+## **Rename .env.txt to .env**
 
 ### Example .env content in backend folder:
 
-# Server Configuration
+### Server Configuration
 PORT=5000
-# MongoDB Connection
+
+### MongoDB Connection
 MONGO_URI=mongodb://127.0.0.1:27017/newswave
 
-# JWT Secret Key (Keep this private!)
+### JWT Secret Key (Keep this private!)
 JWT_SECRET=your_secret_key
 
-# API Base URL (used by frontend)
+### API Base URL (used by frontend)
 VITE_API_BASE_URL=http://localhost:5000/api
 
-# for contact-form and reset-password-Link
+### for contact-form and reset-password-Link
 EMAIL=mirza.fasih99@gmail.com
 EMAIL_PASSWORD=you_16_digit_passcode
 
-# for more-news-show
+### using for related-news-show upon search
 FRONTEND_URL=http://localhost:5173
 NEWS_API_KEY=api_key
 
@@ -75,7 +76,7 @@ nodemon src/server.js OR npm run dev
 
 Your backend will start on: http://localhost:5000
 
-### Frontend Setup
+## Frontend Setup
 
 Open a new terminal and navigate to the frontend folder:
 
@@ -95,7 +96,7 @@ npm run dev
 #### Frontend will be available at:
 http://localhost:5173
 
-### 📂 Folder Overview
+## 📂 Folder Overview
 Folder Description:
 backend/src/controllers	         Contains all logic for handling routes and API requests
 
@@ -117,7 +118,7 @@ frontend/src/utils	             Utility functions and API setup (like api.js)
 - On login, JWT token stored in sessionStorage
 - Protected routes check & validate JWT
 
-### Pages Overview
+## Pages Overview
 
 ### Main Pages
 
@@ -131,7 +132,7 @@ frontend/src/utils	             Utility functions and API setup (like api.js)
 
 **Sign In / Sign Up Page** Allows users to register or log into the platform. Includes a warm welcome message and NewsWave branding.                                  |
 
-### News Features
+## News Features
 
 | Feature                         | Description                                                                                                         |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -145,7 +146,7 @@ frontend/src/utils	             Utility functions and API setup (like api.js)
 | **Bookmarks / Save for Later**  | Users can save favorite articles to read later.                                                                     |
 | **Like / Upvote System**        | Engage with content by liking or upvoting articles.                                                                 |
 
-### Future Improvements
+## Future Improvements
 ✔️ Completed
 - Services section fully fixed and improved
 - Forget Password feature implemented
